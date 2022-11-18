@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness X</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        background-color: black;
+        margin: 0px;
+        padding: 0px;
+        /* background: url("img/dark-gbf39d54b9_1920.jpg"); */
+    }
+
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 20px;
+        top: 6px;
+
+    }
+
+    .left img{
+        width: 104px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 6px;
+        font-size: 26px;
+        text-align: center;
+        float: right;
+        margin-top: 52px;
+    }
+
+    .mid {
+        font-family: cursive;
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        /* position: absolute; */
+        right: 8px;
+        top: 46px;
+        position: fixed;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        padding: 4px 8px 4px 8px;
+        margin: 0px 0px;
+        }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 18px 15px;
+    }
+
+    .navbar li a:hover , .navbar li a:active{
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        border: 2px solid #666666;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: rgb(67 68 70);
+    }
+
+    .container{
+        border: 2px solid #ffffff;
+        margin: 0px 80px;
+        padding: 92px 70px;
+        width: 33%;
+        border-radius: 20px;
+        font-family: 'Staatliches', cursive;
+        font-size: 30px;
+        background: url(img/oak-ridge-ga7f538630_1920.jpg);
+        
+    }
+    #intro{
+        background: url("img/oak-ridge-room-ga7f538630_1920.jpg");
+    }
+
+    #heading1{
+        margin: 84px 280px;
+        padding: 20px 120px;
+        font-size: 40px;
+        font-family: garamond,serif;
+    }
+
+    /* .header{
+        background: url(img/weightlifting-gedcfc3fef_1920.jpg);
+    } */
+
+    /* #login{
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+        padding: 4px 8px 4px 8px;
+        margin: 2px 4px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-family: sans-serif;
+    } */
+    /* #signin{
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+        padding: 4px 8px 4px 8px;
+        margin: 2px 4px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-family: sans-serif;
+    } */
+
+    /* #login:hover{
+        color: rgb(157, 208, 228);
+    } */
+
+    /* #signin:hover{
+        color: rgb(157, 208, 228);
+    } */
+    
+    #joinnow{
+        color: white;
+        background-color: #37778b;
+        border: 2px solid white;
+        padding: 4px 8px 4px 8px;
+        margin: 2px 4px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    #joinnow:hover{
+        color: skyblue;
+    }
+    
+    .images{
+        border: 2px solid green;
+        background-color: white;
+        /* margin-top: 682px; */
+        /* display: flex;
+        flex-direction: column; */
+        margin-top: 20px
+    }
+    
+    #img1{
+        width: 650px;
+        height: 330px;
+        /* border: 2px solid grey; */
+        border-radius: 8px;
+        margin-left: 22px;
+        /* float: left; */
+        margin-top: 20px;
+        
+    }
+    #img2{
+        width: 660px;
+        height: 330px;
+        /* border: 2px solid grey; */
+        border-radius: 8px;
+        margin-left: 22px;
+        /* float: right; */
+    }
+    #img3{
+        width: 650px;
+        height: 330px;
+        /* border: 2px solid grey; */
+        border-radius: 8px;
+        margin-left: 22px;
+        /* float: left; */
+    }
+    .top{
+        background: url("dark-gbf39d54b9_1920.jpg");
+        
+    }
+    #para1{
+        color: black;    
+        width: 650px;
+        height: 260px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        margin-left: 22px;
+        /* float: right; */
+        font-size: 40px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #para2{
+        color: black;
+        width: 650px;
+        height: 260px;
+        /* border: 2px solid grey; */
+        border-radius: 8px;
+        margin-left: 22px;
+        /* float: right; */
+        font-size: 40px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    /* .borderdemo{
+        border: 2px solid red;
+    } */
+    
+    /* .imgpara1{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    } */
+
+</style>
+<body>
+    <div class="top">
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="dumbbell-icon-260nw-393139639.jpg" alt="Logo">
+            <div>Fitness X</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <!-- <button class="btn">Log in</button> -->
+            <!-- <button class="btn">Sign in</button> -->
+
+            <!-- <a id="login" href="log in.html" >Log in</a>
+            <a id="signin" href="sign in.html" >Sign in</a> -->
+
+            <a href="join now.html" id="joinnow">Join now</a>
+        </div>
+    </header>
+    <h3 id="heading1">Welcome to Fitness X</h3>
+    <div class="container" id="intro">
+        <p>Hey, do you want to join a gym then you are at the right place.</p>
+    </div>
+    <iframe id="youtube-1" width="560" height="315" src="https://www.youtube.com/embed/g3ZNprweps0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- <div class="borderdemo">
+    <div class="images">
+    <img id="img1" class="imgpara1" src="img/sports-room_g164f20f87_1920.jpg" alt="gym">
+    <p id="para1" class="imgpara1" >We have the best infrastructure. Where you can experience well maintained equipments. </p>
+    <img id="img2" class="imgpara2"  src="img/gym-girl-1391368_1920.jpg" alt="girl in the gym">
+    <p id="para2" class="imgpara2" >We have a bisexual gym. Where both mens and females can work on their fitness.</p>
+    <img id="img3" class="imgpara3" src="img/training-828760_1920.jpg" alt="girl waightlifting">
+    </div>
+    </div> -->
+</body>
+</html>
